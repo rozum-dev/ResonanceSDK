@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.source            = { :git => 'https://github.com/rozum-dev/ResonanceSDK.git' }
 
     s.ios.deployment_target = '8.0'
-    s.ios.vendored_frameworks = 'ResonanceSDK.framework'
+    s.vendored_frameworks = 'ResonanceSDK.framework'
     s.dependency "INTULocationManager", "~> 4.2.0"
 
 end  
