@@ -1,0 +1,6 @@
+framework module ResonanceSDK {
+  umbrella header "ResonanceSDK.h"
+
+  export *
+  module * { export * }
+}
