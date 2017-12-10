@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     s.license           = { :type => 'Apache-2.0', :file => 'LICENSE' }
 
     s.platform          = :ios
-    s.source            = { :http => 'https://github.com/rozum-dev/ResonanceSDK/blob/master/ResonanceSDK.zip' }
+    s.source            = { :http => 'https://github.com/rozum-dev/ResonanceSDK' }
 
     s.ios.deployment_target = '8.0'
     s.vendored_frameworks = "ResonanceSDK.framework"
