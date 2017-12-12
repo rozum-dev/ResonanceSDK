@@ -92,11 +92,6 @@ requestRecommendations:(NSArray *) recommendations
                             links:(NSArray *) links
                        completion:(void (^)(NSError* error, NSString* string)) completion;
 
-//-(void) logSyncApiCallEvent:(NSString*) requestType
-//                      event:(NSString *) event
-//                      items:(NSArray *) items
-//                 completion:(void (^)(NSError* error, NSString* string)) completion;
-
 -(void) logAsyncApiCallWithCallback:(NSString *) event
                               items:(NSArray *) items
                          completion:(void (^)(NSError* error, NSString* string)) completion;
