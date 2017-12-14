@@ -134,4 +134,7 @@ requestRecommendations:(NSArray *) recommendations
 
 -(void) getRecomendations: (void (^)(NSError *, NSString *)) completion;
 -(void) setupSettings;
+
+
+
 @end

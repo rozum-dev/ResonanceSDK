@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <CoreTelephony/CTCarrier.h>
+#import <UIKit/UIKit.h>
 
 @interface ResonanceBaseSettings : NSObject
 
@@ -24,12 +25,25 @@
 @property (nonatomic, strong) NSString* screenSize;
 @property (nonatomic, strong) NSString* country;
 
-
+@property (nonatomic, strong) NSString* trackingId;
+@property (nonatomic, strong) NSString* sessionId;
 
 @property (nonatomic, assign) BOOL productionMode;
 @property (nonatomic, assign) BOOL allowLocation;
 @property (nonatomic, assign) BOOL allowCarrier;
 
 - (void) configureResonanceSettings;
+
+-(void) setProductionUrl:(NSString *) url;
+-(void) setQaUrl:(NSString *) url;
+-(void) setProductionMode:(BOOL) state;
+-(void) setAllowCarrier:(BOOL) state;
+-(void) setAllowLocation:(BOOL) state;
+
+-(void) setTrackingId:(NSString*) value;
+-(NSString*) getTrackingId;
+
+-(void) setupSessionId;
+
 
 @end
